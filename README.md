@@ -37,7 +37,9 @@ npm run demo
   ✓ Skills: resolve_service, hold_service_option, release_service_option, confirm_service_booking, cancel_service_booking
 
 🔐 Step 2: Verifying Agent Card signature...
-  ⚠  Agent Card has no signatures. Skipping verification.
+  ✓ Agent Card signature verified
+  ✓ Algorithm: ES256
+  ✓ Key ID: orita-a2a-v1-2026-08-02
 
 📋 Step 3: Registering for sandbox access...
   ✓ Sandbox credential issued: orita_test_••••••••••••••••••••••••••••••••
@@ -167,7 +169,7 @@ npm run build
 
 - The sandbox token is **never written to disk** — it lives in memory only for the duration of the demo.
 - All log output redacts token values after position 16 (`orita_test_hpZGb••••••••`).
-- Sandbox tokens expire in ~48 hours.
+- Sandbox tokens expire in 24 hours.
 - The registration endpoint is rate-limited to 20 calls/hour.
 
 ## Links
