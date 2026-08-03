@@ -1,0 +1,28 @@
+{
+  "name": "orita-a2a-sandbox-example",
+  "version": "1.0.0",
+  "description": "Zero-account A2A example: discover Orita, resolve a provider, hold an option, approve it, and create a sandbox booking.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "demo": "tsx src/demo.ts",
+    "test": "vitest run tests/ --exclude tests/live-smoke.test.ts",
+    "test:live": "vitest run tests/live-smoke.test.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@a2a-js/sdk": "^1.0.1",
+    "jose": "^5.0.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
